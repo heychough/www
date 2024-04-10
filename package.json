@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "styles": "tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --watch",
+        "styles": "tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css",
+        "styles:watch": "tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --watch",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
