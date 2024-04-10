@@ -1,0 +1,33 @@
+{{define "index"}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>heychough</title>
+        <link rel="stylesheet" href="/assets/styles/output.css" />
+        <link rel="icon" href="/assets/favicon.ico"> 
+        <meta name="title" content="heychough">
+        <meta name="description" content="my personal site">
+        <meta name="keywords" content="personal site, heychough">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="author" content="heychough">
+    </head>
+
+    <body class="md:bg-gray-200 bg-white">
+        <article class="bg-white px-6 py-4 border prose prose-w-none w-full mx-auto my-4 max-w-none border-none lg:border-gray-300 lg:max-w-6xl">
+            {{if not .isIndex}}
+            <a href="/">← Home</a>
+            {{end}}
+
+            {{.content}}
+        </article>
+    </body>
+
+</html>
+
+{{end}}
