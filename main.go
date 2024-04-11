@@ -35,7 +35,7 @@ func main() {
 	e.GET("*", notFound)
 	e.GET("/blog/:path", blogs)
 
-	e.Logger.Fatal(e.Start(":4269"))
+    e.Logger.Fatal(e.Start(fmt.Sprintf(":%s", os.Getenv("PORT"))))
 }
 
 func getMarkdownUtilities() (*parser.Parser, *html.Renderer) {
